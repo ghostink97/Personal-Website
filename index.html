@@ -7,25 +7,38 @@
         <link rel="stylesheet" href="css/css.css" type="text/css">
         <title>Angel Meyer</title>
         <link rel="icon" href="logo-cat.ico" type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     </head>
     <body>
         <header>
-            <nav>
-                <img src="images/logosmall.png" alt="logo">
-                <img src="images/burgermen.png" alt="burger menu">
+            <nav id="mobile-nav">
+                <a href="https://www.angelezrameyer.com"><img src="images/logosmall.png" alt="logo" id="logo"></a>
+                <img src="images/burgermen.png" alt="burger menu" id="burger-men">
             </nav>
         </header>
         <main>
             <section id="main-sect">
-                <h1>Webdesign something something</h1>
-                <h5>another something something</h5>
-                <a href="#"><img src="#" alt="Arrow pointing down" id="downarrow"></a>
+                <div id="title-box">
+                    <h1>Webdesign something something</h1>
+                    <h5>another something something</h5>
+                </div>
+                <a href="#about-sect"><img src="images/arrow-down.png" alt="Arrow pointing down" id="downarrow"></a>
                 
             </section>
             <section id="about-sect">
-                <img src="#" alt="sdklfjaskdjf">
+                <img src="#" alt="drawing of Angel">
                 <h2>About me:</h2>
-                <p>im too lazy rn</p>
+                <p>Hi! I am Angel Meyer. I'm a 20 year old woman from Denmark.</p>
+                <button id="read-more-about">Read More</button>
+
+                <p id="more-about" class="hide">I study multimedia and communication at KEA, which is located in Copenhagen. Initially, I was majoring in Japan Studies at the University Of Copenhagen, but after just one year of doing the programme, I realized that it wasn't for me. I have always been a creative type, and reading for hours without getting to be creative on a daily basis just isn't something I am capable of. 
+                        My dream was always to go to School for animation, but art schools are extremely prestigeous in Denmark, and nearly impossible to get into. After getting rejected, I decided to shoot for an alternative option. Something that would let me create. Something that I wouldn't end up loosing motivation in.
+                        
+                        About 8 months ago I started learning python on a whim, and I loved it. It was so much fun, and I enjoyed the process so much so that I looked into IT and technology related studies. That's why I decided to study multimedia design with the intent of taking the Web Development top up.
+                        
+                        As a young adult, all you think of is the future. What you are going to do with your life, and how you can make an impact in a world that seems too crowded.
+                        
+                        I've found that for me, it's all about creating things. Whether it's art that inspires, poems that makes people feel like me, or coding apps and websites that help people in their daily lives. I just want to create things, because I believe that you can only truly live forever in the creations you've made.</p>
             </section>
             <section id="webdesign-sect">
                 <h2>Webdesign and coding</h2>
@@ -43,19 +56,22 @@
             </section>
             <section id="Contact-sect">
                 <h1>Contact me</h1>
-                <form id="my-form">
+                <form id="my-form" action="https://formspree.io/redacted@redacted.redacted" method="POST">
                     <label>
                         E-mail
-                        <input type="email" name="E-mal" id="email">
+                        <input type="email" name="E-mail:" id="email" placeholder="eg. Jonathan Joestar">
                     </label>
                     <label>
                         Subject
-                        <input type="text" name="subj" id="Subject">
+                        <input type="text" name="Subject:" id="subject" placeholder="eg. Jojo@joestar.com">
                     </label>
                     <label>
                         Message
-                       <textarea name="tex" id="" cols="30" rows="10" id="message"></textarea>
+                       <textarea name="Message:" id="message" cols="30" rows="10" placeholder="Please type your message here..."></textarea>
                     </label>
+                    <div id="status">
+
+                    </div>
                     <button type="submit" id="submit-btn">Send</button>
                 </form>
             </section>

@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+label, input, textarea{
+    display:block;
+}
+
+.hide{display: none}
+
+#logo{
+    display: inline;
+    width:10%;
+    top: .5em;
+    position: relative;
+}
+
+#burger-men{
+    display: inline;
+    position: relative;
+    float: right;
+    width: 30px;
+    top: 1em;
+}
+
+#mobile-nav{
+    margin-bottom: 0em;
+    padding: 0;
+}
+
+#main-sect{
+    margin: 0;
+    padding:0;
+    height: 812px;
+    background-image: url("/images/mobile-bg.png");
+    /*from w3 my hero*/
+    background-color: #1c033f; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    /**/
+}
