@@ -6,30 +6,33 @@
         <meta name="description" content="Angel Meyers' personal webpage">
         <link rel="stylesheet" href="css/css.css" type="text/css">
         <title>Angel Meyer</title>
-        <link rel="icon" href="logo-cat.ico" type="image/x-icon">
+        <link rel="icon" href="logo3.ico" type="image/x-icon">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     </head>
-    <body>
+    <body class="custom">
         <header>
-            <nav id="mobile-nav">
-                <a href="https://www.angelezrameyer.com"><img src="images/logosmall.png" alt="logo" id="logo"></a>
-                <img src="images/burgermen.png" alt="burger menu" id="burger-men">
+            <nav id="nav" class="hide">
             </nav>
         </header>
         <main>
             <section id="main-sect">
                 <div id="title-box">
-                    <h1>Webdesign something something</h1>
-                    <h5>another something something</h5>
+                    <h1>Angel Ezra Meyer</h1>
+                    <h5>Webdesigner, Artist and Comic Book Enthusiast</h5>
                 </div>
-                <a href="#about-sect"><img src="images/arrow-down.png" alt="Arrow pointing down" id="downarrow"></a>
+                <div id="livingalie"><a href="#about-sect"><img src="images/arrow-down.png" alt="Arrow pointing down" id="downarrow"></a></div>
                 
             </section>
             <section id="about-sect">
-                <img src="#" alt="drawing of Angel">
+                <picture title="angel's icon">
+                        <source media="(min-width: 1200px)" srcset="images\icon6big.png" class="angelicon">
+                        <source media="(min-width: 768px)" srcset="images\icon6normal.png" class="angelicon">
+                        <source media="(min-width: 300px)" srcset="images\icon6small.png" class="angelicon">
+                        <img src="images\icon.png" alt=" angel's icon" title="icon" class="angelicon">
+                 </picture>
                 <h2>About me:</h2>
-                <p>Hi! I am Angel Meyer. I'm a 20 year old woman from Denmark.</p>
-                <button id="read-more-about">Read More</button>
+                <p>I'm a 21 year old webdesigner, artist and comic book writer located in Copenhagen</p>
+                <button id="about-btn">Read More</button>
 
                 <p id="more-about" class="hide">I study multimedia and communication at KEA, which is located in Copenhagen. Initially, I was majoring in Japan Studies at the University Of Copenhagen, but after just one year of doing the programme, I realized that it wasn't for me. I have always been a creative type, and reading for hours without getting to be creative on a daily basis just isn't something I am capable of. 
                         My dream was always to go to School for animation, but art schools are extremely prestigeous in Denmark, and nearly impossible to get into. After getting rejected, I decided to shoot for an alternative option. Something that would let me create. Something that I wouldn't end up loosing motivation in.
@@ -39,44 +42,54 @@
                         As a young adult, all you think of is the future. What you are going to do with your life, and how you can make an impact in a world that seems too crowded.
                         
                         I've found that for me, it's all about creating things. Whether it's art that inspires, poems that makes people feel like me, or coding apps and websites that help people in their daily lives. I just want to create things, because I believe that you can only truly live forever in the creations you've made.</p>
+                    <button button id="less-btn" class="hide">Show Less</button>
             </section>
             <section id="webdesign-sect">
-                <h2>Webdesign and coding</h2>
-                <p>bla bla bla</p>
-                <h6>Schoolwork</h6>
-                <a href="#">First Semester Exam</a>
-                <a href="#">Petrograd Website</a>
-                <a href="#">Tarantino Project</a>
-                <a href="#">Second Semester Exam</a>
+                <h2 id="webd-text">Webdesign and coding</h2>
+                <h4 id="sometext">I currently study multimedia Design and Communication at KEA.
+                    I've linked to school projects as well as my github account down below
+                </h4>
+                
+                    <a href="https://angelezrameyer.com/kea/" class="links" target="_blank"> The First Website I Coded</a>
+                    <a href="https://www.angelezrameyer.com/kea/portfolio/" class="links" target="_blank">First Semester Exam Project</a>
+                    <a href="https://angelezrameyer.com/kea/petrograd/" class="links" target="_blank">Petrograd Website</a>
+                    <a href="https://ourangelofsorrows.github.io/tarantino/Website/Code/html.html" class="links" target="_blank">Tarantino Project</a>
+                    <a href="http://www.angelezrameyer.com/kea/2nd-sem-exam/news.html" class="links" target="_blank">Second Semester Exam</a>
+                    <a href="https://github.com/ourangelofsorrows" class="links" target="_blank">Github</a>
+
             </section>
             <section id="art-sect">
                 <h2>Art</h2>
-                <p>Bla bla</p>
-                <img src="#" alt="artwork made by Angel Meyer">
+                <h4>Besides webdesign, I also do artwork. I do a wide variety of artwork including character design, illustration, graphic design work, logo design and writing indie comics</h4>
+                <a href="https://www.angelezrameyer.com/art/" class="link-art" target="_blank">Go to Artwork</a>
+                <img src="images/thegang.png" alt="artwork made by Angel Meyer" id="thegang">
             </section>
-            <section id="Contact-sect">
+            <section id="contact-sect">
                 <h1>Contact me</h1>
-                <form id="my-form" action="https://formspree.io/redacted@redacted.redacted" method="POST">
-                    <label>
-                        E-mail
-                        <input type="email" name="E-mail:" id="email" placeholder="eg. Jonathan Joestar">
-                    </label>
-                    <label>
-                        Subject
-                        <input type="text" name="Subject:" id="subject" placeholder="eg. Jojo@joestar.com">
-                    </label>
-                    <label>
-                        Message
-                       <textarea name="Message:" id="message" cols="30" rows="10" placeholder="Please type your message here..."></textarea>
-                    </label>
-                    <div id="status">
+                <div id="imafraud">
+                    <form id="my-form" action="https://formspree.io/redacted@redacted.redacted" method="POST">
+                        <label>
+                            E-mail
+                            <input type="email" name="E-mail:" id="email" placeholder="eg. Jonathan Joestar" class="evil">
+                        </label>
+                        <label>
+                            Subject
+                            <input type="text" name="Subject:" id="subject" placeholder="eg. Jojo@joestar.com" class="evil"> 
+                        </label>
+                        <label>
+                            Message
+                        <textarea name="Message:" id="message" cols="30" rows="7" placeholder="Please type your message here..." class="evil"></textarea>
+                        </label>
+                        <div id="status">
 
-                    </div>
-                    <button type="submit" id="submit-btn">Send</button>
-                </form>
+                        </div>
+                        <button type="submit" id="submit-btn">Send</button>
+                    </form>
+                </div>
             </section>
         </main>
         <footer>
+            <div id="hackerman"><img src="images/logowhite.png" alt="angel's logo" id="botm-logo"></div>
             <p>C 2019 Angel Meyer</p>
         </footer>
         <script src="js/index.js"></script>
